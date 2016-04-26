@@ -1,39 +1,22 @@
-exports.cheapestSeller = function (Obj1) {
+exports.cheapestSeller = function(Obj1) {
+
+
+
+  var min = Infinity;
+  //minObj = {};
+  var minStore = "";
 
   for (var shops in Obj1) {
-var store = Obj1[shops];
 
-console.log(store);
+    var fruits = Obj1[shops];
+    if (fruits.oranges < min) {
+      min = fruits.oranges;
+      minStore = shops;
 
+
+    }
+
+  }
+  console.log(minStore);
+  return minStore
 }
-}
-
-// var minPrice = [];
-//
-// var min = Infinity;
-// var minObj = {};
-// newArrAvo.forEach(function(obj) {
-//   if (obj.pricePerAvo < min) {
-//     min = obj.pricePerAvo;
-//     minObj = obj;
-//   }
-//   if (min === obj.pricePerAvo) {
-//     minPrice.push(obj)
-//   }
-//
-// });
-// console.log(minObj)
-// return minObj;
-
-
-// var minPrice = [];
-// var min = Infinity;
-// var minObj = {};
-
-  // if (obj.oranges < min) {
-  //   min = obj.oranges;
-  //   minObj = obj;
-  // }
-  // if (min === obj.oranges)
-  // minPrice.push(obj)
-  //

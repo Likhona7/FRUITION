@@ -38,7 +38,7 @@ describe('test for bestDeal Fruition function', function() {
       it('should give a seller with cheapest orange', function() {
 
         var result = fruit.cheapestSeller(retailStores);
-        assert.deepEqual(result, chockers);
+        assert.equal(result, 'chockers');
 
 
       })
