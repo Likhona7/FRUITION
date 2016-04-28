@@ -42,4 +42,29 @@ describe('test for bestDeal Fruition function', function() {
 
 
       })
+      it("should return the prices and sellers of apples, order ascending by price", function(){
+var applePrices1 =[["shopwrong",2],["woolingsworth",4],["kwakspar",4],["chockers",5]];
+var result = fruit.AppleSellers1(retailStores);
+assert.deepEqual(result, applePrices1)
+      })
+
+
+
+
+    it("should return the prices and sellers of apples, order decending by price", function(){
+var applePrices2 =[["chockers",5],["woolingsworth",4],["kwakspar",4],["shopwrong",2]];
+
+var result = fruit.AppleSellers2(retailStores);
+assert.deepEqual(result, applePrices2);
+    })
+
+    it("should return the cheapest fruit", function(){
+var result = fruit.cheapFruit(retailStores);
+assert.deepEqual(result, "apples");
+    })
+
+    it("should return the seller of the fruit with the lowest price", function(){
+var result = fruit.cheapStore(retailStores);
+assert.deepEqual(result, "shopwrong");
+    })
 })
