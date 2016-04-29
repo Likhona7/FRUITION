@@ -67,4 +67,12 @@ assert.deepEqual(result, "apples");
 var result = fruit.cheapStore(retailStores);
 assert.deepEqual(result, "shopwrong");
     })
+
+    it("should return all the shops that sell oranges.", function(){
+var OrangeSeller2 = ["woolingsworth","chockers","pickle pay","kwakspar"];
+
+var result = fruit.orangeSeller1(retailStores);
+assert.deepEqual(result, OrangeSeller2);
+
+    })
 })

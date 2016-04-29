@@ -84,11 +84,11 @@ exports.cheapFruit = function(obj) {
 
   for (var shops in obj) {
     for (var shop1 in obj[shops]) {
-      //shop1 is the fruits all of dem.
+                                          //shop1 is the fruits all of dem.
       var shopsValue = obj[shops];
-      //shopsValue is the fruit & its values.
+                                         //shopsValue is the fruit & its values.
       var fruit = shopsValue[shop1];
-        //fruit is only the value of fruits.
+                                       //fruit is only the value of fruits
       if (fruit <= min) {
         min = fruit;
         minfruit = shop1;
@@ -121,34 +121,27 @@ if(fruit <= min) {
 console.log(minfruit);
 return minfruit;
 }
+///////////////////////////////////////////////////////////////////////////////
 
+exports.orangeSeller1  = function(obj){
 
+  var record = "";
+  var orangeshops = [];
+  for (var shops in obj) {
+    var fruit = obj[shops];
+    if (obj[shops].hasOwnProperty("oranges")) {
+record = shops;
+orangeshops.push(record);
 
+    }
 
-
-
-
-
-// var fruit = obj[shops];
-// var apples = fruit.apples;
-// if (shops === apples) {
-//   apples = shops;
-//   minStore = shops
-// }console.log(shops,apples);
-
-
-// exports.avoObj = function(avoArr) {
-//   var avoDealArr = [];
-//   avoArr.forEach(function(arr) {
-//     var rows = arr.split(" ");
-//     dealObj = {
-//       price: rows[1],
-//       quantity: rows[0]
-//     }
-
-
-
-// /  console.log(shops)
+  }
+  console.log(orangeshops);
+  return orangeshops;
+  }
+//   console.log(orangeDescending);
+//   return orangeDescending;
+//
+//
+//
 // }
-
-// console.log(record);
